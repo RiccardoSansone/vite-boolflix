@@ -77,6 +77,7 @@ main{
             flex-wrap: wrap;
             justify-content: center;
             gap: 1rem;
+            align-content: start;
             i{
                 color: #ee311f;
             }
@@ -95,6 +96,7 @@ main{
             flex-wrap: wrap;
             justify-content: center;
             gap: 1rem;
+            align-content: start;
             i{
                 color: #ee311f;
             }
@@ -108,12 +110,17 @@ main{
         .card{
             display: flex;
             flex-direction: column;
-            width: calc(100% / 12 * 3);
-            background-color: whitesmoke;
-            padding: 0.2rem;
+            width: calc(100% / 12 * 4);
+            background-color: rgb(50, 43, 43);
             border-radius: 10px;
-            box-shadow: 0 0 3px black;
-            min-height: 200px;
+            &:hover{
+                .containerInfo{
+                    display: block;
+                }
+                .containerImg{
+                    display: none;
+                }
+            }
         }
     }
 }
@@ -123,4 +130,16 @@ main{
 h1{
     color: #ee311f;
     text-shadow: 0 10px black;
+}
+.containerInfo{
+    display: none;
+    background-color: whitesmoke;
+    min-height: 250px;
+}
+.containerImg{
+    img{
+        width: 100%;
+        min-height: 250px;
+        object-fit: cover;
+    }
 }
