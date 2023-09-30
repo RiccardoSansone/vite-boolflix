@@ -2,8 +2,125 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 img{
     width: 30px;
     aspect-ratio: 1;
+}
+header{
+    width: 100%;
+    background-color: #ee311f;
+    height: 80px;
+    display: flex;
+}
+.nav{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imgNav{
+    width: 15%;
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+.searchContainer{
+    display: flex;
+    gap: 1rem;
+    input{
+        padding: 0.3rem 0.6rem;
+        border: none;
+        box-shadow: 0 0 10px 0 black;
+        border-radius: 20px;
+    }
+    button{
+        &:hover{
+            background-color: yellow;
+            color: black;
+        }
+        padding: 0.4rem 0.4rem;
+        border-radius: 20px;
+        color: white;
+        box-shadow: 0 0 10px 0 black;
+        background-color: black;
+        font-weight: bold;
+    }
+}
+main{
+    background-color: black;
+    min-height: 500px;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    .container{
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: 20px;
+        min-height: 200px;
+        width: 90%;
+        margin: auto;
+        background-color: rgb(50, 43, 43);
+        display: flex;
+        justify-content: space-between;
+        .tv{
+            width: 50%;
+            border-radius: 20px;
+            padding: 0.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            i{
+                color: #ee311f;
+            }
+            .titolo{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                height: 30px;
+            }
+        }
+        .film{
+            width: 50%;
+            border-radius: 20px;
+            padding: 0.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            i{
+                color: #ee311f;
+            }
+            .titolo{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                height: 30px;
+            }
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            width: calc(100% / 12 * 3);
+            background-color: whitesmoke;
+            padding: 0.2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 3px black;
+            min-height: 200px;
+        }
+    }
+}
+.star{
+    display: flex;
+}
+h1{
+    color: #ee311f;
+    text-shadow: 0 10px black;
 }
